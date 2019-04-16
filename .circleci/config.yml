@@ -26,7 +26,7 @@ jobs:
       #       # fallback to using the latest cache if no exact match is found
       #       - v1-dependencies-
 
-      - run: cd functions && npm install && npx firebase deploy --token "$FIREBASE_TOKEN"
+      - run: cd functions && npm install && ./node_modules/bin/firebase deploy --token "$FIREBASE_TOKEN"
 
       # - save_cache:
       #     paths:
